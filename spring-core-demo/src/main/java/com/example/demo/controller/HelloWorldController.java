@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.service.GreetingService;
 
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
 
