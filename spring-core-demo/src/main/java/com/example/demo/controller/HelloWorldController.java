@@ -11,6 +11,7 @@ import com.example.demo.service.GreetingService;
 import lombok.extern.slf4j.Slf4j;
 
 
+
 @Slf4j
 @RestController
 @RequestMapping(value = "/api/")
@@ -18,6 +19,8 @@ public class HelloWorldController {
 
 	@Value("${catalog.name}")
 	String catalog;
+	
+
 	
 	int count = 0;
 	@Autowired
@@ -42,7 +45,8 @@ public class HelloWorldController {
 	@GetMapping("/hello")
 	String hello()
 	{
-		count++;
+		
+ 		count++;
 		return greetingService.greet()+ "Count"+count + this.catalog; 
 	}
 	

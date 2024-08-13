@@ -1,0 +1,6 @@
+MAX_RECENT_WORKSPACES=10
+RECENT_WORKSPACES=/Users/aungthureintun/Documents/Devs/Spring\n/Users/aungthureintun/Documents/Devs/test\n/Users/aungthureintun/Documents/Devs/Spring /spring-core-demo\n/Users/aungthureintun/Documents/Devs/Spring 
+RECENT_WORKSPACES_PROTOCOL=3
+SHOW_RECENT_WORKSPACES=false
+SHOW_WORKSPACE_SELECTION_DIALOG=true
+eclipse.preferences.version=1
