@@ -11,6 +11,6 @@ public class HomeController {
 	@GetMapping
 	String test()
 	{
-		return "controller";
+		return "home";
 	}
 }

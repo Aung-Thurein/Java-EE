@@ -1,5 +1,7 @@
 package com.javaee.webmvc.demo.model;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -8,9 +10,26 @@ import lombok.Data;
 public class BookDto{
 	
 	private long id;
-	private String author;
+
+	@NotBlank(message = "{required.book.title}")
+	@Size(min = 3, max = 100, message = "{size.book.title}")
 	private String title;
+	
+	@NotBlank(message = "{required.book.author}")
+	@Size(min = 3, max = 100, message = "{size.book.author}")
+	private String author;
+	
+	@NotBlank(message = "{required.book.description}")
+	@Size(min = 3, max = 100, message = "{size.book.description}")
 	private String description;
+
+	public BookDto() {
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString();
+	}
 	
 	public BookDto(long id, String author, String title, String description) {
 		super();

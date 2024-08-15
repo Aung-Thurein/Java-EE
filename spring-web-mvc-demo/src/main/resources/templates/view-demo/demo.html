@@ -12,5 +12,8 @@
 	Message
 	<p th:text="#{view.greeting}">placeholder message</p>
 	
+	<h1 th:if="${admin}">Admin User</h1>
+	
+	Today is: <span th:text="${#calendars.format(today,'dd MMMM yyyy')}">13 May 2011</span>
   </body>
 </html>
