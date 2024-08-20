@@ -15,7 +15,6 @@ import com.javaee.webmvc.demo.model.BookDto;
 import com.javaee.webmvc.demo.service.BookService;
 
 import jakarta.validation.Valid;
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -37,17 +36,20 @@ public class BookController {
 	}
 	
 	@PostMapping(value = "/new")
-	String saveBook(Model model,@Valid @ModelAttribute BookDto book, BindingResult bindingResult)
+	String saveBook(Model model,@Valid @ModelAttribute("book") BookDto book, BindingResult bindingResult)
 	{
 		if(bindingResult.hasErrors())
 		{
-			model.addAttribute("book", book);
+		
 			return "books/new.html";
 		}
+		
 		else 
 		{
-			model.addAttribute("book", book);
-			return "books/new.html";
+			//save Book
+			this.bookService.addBook(book);
+			model.addAttribute("newBookSaved", "New Book have been saved.");
+			return "/books/new.html";
 		}
 	}
 	

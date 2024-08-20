@@ -40,7 +40,6 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
-    <fullyQualifiedTypeName name="com.javaee.webmvc.demo.model.BookDto"/>
     <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
     <fullyQualifiedTypeName name="org.springframework.validation.annotation.Validated"/>
     <fullyQualifiedTypeName name="jakarta.validation.Valid"/>
@@ -50,4 +49,5 @@
     <fullyQualifiedTypeName name="org.apache.juli.logging.Log"/>
     <fullyQualifiedTypeName name="org.hibernate.validator.internal.util.logging.Log"/>
     <fullyQualifiedTypeName name="lombok.extern.java.Log"/>
+    <fullyQualifiedTypeName name="com.javaee.webmvc.demo.model.BookDto"/>
 </qualifiedTypeNameHistroy>
