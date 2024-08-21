@@ -2,11 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <header th:insert="/fragments/header.html"> </header>
 
-<style>
-	.error {
-		color: red;
-	}
-</style>
 
 <body>
 	<section layout:fragment="content">
@@ -18,7 +13,9 @@
 			<div>
 				&nbsp;
 			</div>
-			<form action="#" th:action="@{/books/new}" th:object="${book}" method="POST" id="addNewBookForm">
+			<form action="#" th:action="@{/books/new}" th:object="${book}"
+			 method="POST"
+			  id="addNewBookForm">
 				<div class="form-group">
 					<label for="bookId">Book Id</label>
 					<input class="form-control" id="bookId" th:field="*{id}" placeholder="Enter bookid">
